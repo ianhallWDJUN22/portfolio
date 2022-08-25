@@ -1,21 +1,21 @@
 body {
-  padding: 20px;
+
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: rgba(99, 53, 142, 0.241);
+
 }
 
 a {
   color: rgb(197, 171, 2);
   text-decoration:none;
-  text-shadow: 1px 1px 1px rgba(39, 38, 38, 0.5);
 }
 
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  flex-flow: row-reverse;
   overflow: hidden;
   background-color: rgba(50, 50, 50, 0.6);
+  padding-top: 0px;
  
 }
 
