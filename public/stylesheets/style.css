@@ -85,3 +85,7 @@ a {
   display: block;
 }
 
+.myPic {
+  height: 300px;
+  border-radius: 380px;
+}
