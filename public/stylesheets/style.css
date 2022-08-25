@@ -1,0 +1,87 @@
+body {
+  padding: 20px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: rgba(99, 53, 142, 0.241);
+}
+
+a {
+  color: rgb(197, 171, 2);
+  text-decoration:none;
+  text-shadow: 1px 1px 1px rgba(39, 38, 38, 0.5);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  background-color: rgba(50, 50, 50, 0.6);
+ 
+}
+
+.navbar a {
+  float: left;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  padding: 16px 18px;
+  text-decoration: none;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+
+.dropdown .dropbtn {
+  font-size: 22px;
+  text-align: center;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  padding: 16px 18px;
+  background-color: inherit;
+  font-family: inherit;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: rgba(194, 138, 26);
+}
+
+
+.navbar a:hover  {
+  background-color: rgba(194, 138, 26,0.5);
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  margin-top: 0; 
+  background-color: rgba(50, 50, 50, 0.6);
+  min-width: 120.5px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  font-size: 16px;
+  float: none;
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  text-shadow: 0px;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(194, 138, 26,0.5);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
