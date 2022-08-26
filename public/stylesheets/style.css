@@ -1,6 +1,8 @@
 body {
-
+  margin: 0 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  min-width: 500px;
+  background-color: rgb(50, 50, 50);
 
 }
 
@@ -9,13 +11,22 @@ a {
   text-decoration:none;
 }
 
+
+
+/* NAV SECTION  */
+
 .navbar {
+  position: fixed;
+  width: 100%;
   display: flex;
   align-items: center;
   flex-flow: row-reverse;
   overflow: hidden;
   background-color: rgba(50, 50, 50, 0.6);
   padding-top: 0px;
+  padding-bottom: 0px;
+  margin: 0;
+  z-index: 1;
  
 }
 
@@ -26,6 +37,10 @@ a {
   text-align: center;
   padding: 16px 18px;
   text-decoration: none;
+}
+
+.navHome {
+  padding-right: 20px;
 }
 .dropdown {
   float: left;
@@ -51,7 +66,7 @@ a {
 
 
 .navbar a:hover  {
-  background-color: rgba(194, 138, 26,0.5);
+  background-color: rgba(194, 138, 26);
 }
 
 
@@ -68,7 +83,7 @@ a {
 
 .dropdown-content a {
   font-size: 16px;
-  float: none;
+  float: left;
   color: rgb(255, 255, 255);
   padding: 12px 16px;
   text-decoration: none;
@@ -82,10 +97,79 @@ a {
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+  display: flex;
+  position: relative;
+  float:left;
+  padding: 7px 7px;
+
+}
+
+
+
+
+/* HEADER SECTION */
+
+
+.header {
+  display: flex;
+  flex-direction: row;
+  height: 74%;
+}
+
+.headerLeft {
+  height: 100%;
+  background: linear-gradient(-30deg, rgb(20, 1, 25), rgb(35, 22, 1));
+  background-image: url("../images/header-photo-2.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+  padding-top: 0;
+  margin-top: 0;
+  flex: 2;
+}
+
+.headerRight {
+  flex: 1;
+  background: linear-gradient(-30deg, rgb(20, 1, 25), rgb(35, 22, 1));
+  min-width: 220.66px;
 }
 
 .myPic {
   height: 300px;
   border-radius: 380px;
+  position: absolute;
+  top: 150px;
+  right: 15%;
+  z-index: 0;
+
+  
+
+}
+
+/* MID SECTION */
+
+.midSection {
+  background-color: rgb(50, 50, 50);
+}
+
+
+
+/* PROJECT SECTION */
+
+.projectPhoto1 {
+  height: 300px;
+  background-image: url("../images/Defusal-screenshot.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.projectPhoto2 {
+  height: 300px;
+  background-image: url("../images/Dungeon-Forge-screenshot.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.projectPhoto3 {
+  height: 300px;
+  background-image: url("../images/baseNote-screenshot.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
