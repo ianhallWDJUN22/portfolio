@@ -2,9 +2,12 @@ body {
   margin: 0 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   min-width: 500px;
-  background: linear-gradient(-30deg, rgb(68, 1, 37), rgb(20, 1, 25));
+  background: linear-gradient(-30deg, rgb(50, 2, 27), rgb(20, 1, 25));
   box-shadow: inset 0 -6em 6em rgba(254, 200, 5, 0.1);
+}
 
+.topSection {
+  padding-bottom: 60px;
 }
 
 a {
@@ -131,9 +134,9 @@ a {
   padding: 15px;
   box-shadow: inset 0 -3em 3em rgba(254, 200, 5, 0.1),
   0 0  0 2px rgba(246, 222, 68, 0.646),
-  0.3em 0.3em 1em rgba(249, 221, 10, 0.3);
+  0.3em 0.3em 3em rgba(249, 221, 10, 0.3);
+  max-width: 950px;
 }
-
 
 .headerRight {
   flex: .75;
@@ -157,7 +160,7 @@ a {
 @media screen and (max-width: 678px) {
   .myPic {
     height: 250px;
-    border-radius: 380px;
+    border-radius: 360px;
     position: absolute;
     top: 280px;
     right: 20px;
@@ -194,6 +197,7 @@ a {
     display: flex;
     justify-content: center;
     margin-top: 10px;
+
   }
 
 }
@@ -201,7 +205,7 @@ a {
 @media screen and (min-width: 679px) {
 .myPic {
   height: 300px;
-  border-radius: 380px;
+  border-radius: 360px;
   position: absolute;
   top: 150px;
   right: 15%;
@@ -237,8 +241,8 @@ a {
   justify-content: center;
   margin-top: 10px;
   margin-right: 35px;
+  margin-left: 35px;
 }
-
 
 }
 
@@ -246,48 +250,47 @@ a {
 /* MID SECTION */
 
 .midLeft {
-  color:rgb(237, 209, 49);
   display: flex;
-  justify-content: center;
+  justify-content: left;
   flex-direction: column;
   text-align: center;
   margin-top: 20px;
-  margin-left: 5%;
-  margin-right: 5%;
   flex: 1.5;
   min-width: 400px;
+  min-height: 400px;
+  margin-bottom: 18px;
+
 }
+
 .bioDescription {
   /* background-color: rgba(233, 212, 166, 0.608); */
-  color: rgb(246, 222, 68);
   padding-right: 20px;
   padding-left: 20px;
   padding-bottom: 20px;
-  text-shadow: 1px 1px rgba(159, 158, 158, 0.2);
-  border-radius:  2px;
-  box-shadow: inset 0 -3em 5em rgba(254, 200, 5, 0.1),
-  0 0  0 2px rgba(246, 222, 68, 0.646),
-  0.3em 0.3em 2em rgba(249, 221, 10, 0.3);
-  background: linear-gradient(20deg, rgb(68, 1, 37), rgb(20, 1, 25));
+  box-shadow: inset 0 -3em 3em rgba(254, 200, 5, 0.258),
+  /* 0 0  0 2px rgba(246, 222, 68, 0.646), */
+  0.3em 0.3em 2em rgba(249, 221, 10, 0.35);
+  background-color: rgba(148, 138, 102, 0.895);
+  /* background: linear-gradient(20deg, rgb(68, 1, 37), rgb(20, 1, 25)); */
   flex: 1.5;
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
+  margin-top: 50px;
 }
-
 
 .midSection {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 28px;
+  margin-top: 40px;
 }
 
 .midH2 {
   color: rgb(237, 209, 49);
+  text-shadow: 1px 1px 2px rgba(241, 221, 106, 0.479), 0 0 1em rgba(241, 221, 106, 0.444), 0 0 0.2em rgba(241, 221, 106, 0.766);
   margin-bottom: 5px;
+  margin-top: 10px;
 }
-
 
 .contactSquare {
   display: flex;
@@ -295,7 +298,8 @@ a {
   background-color: rgba(148, 138, 102, 0.895);
   border-radius: 10px;
   padding: 5px;
-  margin: 10px;
+  margin: 20px;
+  margin-top: 10px;
   padding-bottom: 10px;
   width: 180px;
   height: 140px;
@@ -316,13 +320,40 @@ svg {
   display: flex;
 }
 
-
 B {
-  text-shadow: 1px 1px rgba(24, 24, 24, 0.841);
+  text-shadow: 1px 1px rgba(24, 24, 24, 0.957);
+  text-shadow: .5px .5px 1px rgba(108, 93, 7, 0.328), 0 0 .5em rgba(241, 221, 106, 0.326), 0 0 0.1em rgba(241, 221, 106, 0.293);
+}
+
+.aboutMe {
+  margin-top: 25px;
+  font-size: 25px;
+}
+
+.bioArticle {
+  margin-top: 5px;
 }
 
 
+/* .disection {
+  height: 10px;
+  width: 100%;
+  background-color: black;
+} */
+
 /* PROJECT SECTION */
+
+.bottomSection {
+  background:linear-gradient(-30deg, rgb(50, 2, 27), rgb(20, 1, 25));
+  box-shadow: inset 0 -1em 1em rgba(254, 200, 5, 0.1),
+  0 0  0 2px rgba(246, 222, 68, 0.646),
+  0.3em 0.3em 1em rgba(249, 221, 10, 0.3);
+}
+
+#projectBlock1 {
+  background-image: url("../images/purple-background-small-size.png");
+  background-size: cover;
+}
 
 .projectPhoto1 {
   height: 300px;
