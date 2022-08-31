@@ -8,6 +8,7 @@ body {
 
 .topSection {
   padding-bottom: 60px;
+  
 }
 
 a {
@@ -178,7 +179,7 @@ a {
 
   .name {
     font-size: 42px;
-    margin-top: 195px;
+    margin-top: 40%;
     margin-bottom: 25px;
     text-shadow: 1px 2px rgba(24, 24, 24, 0.841);
   }
@@ -189,6 +190,7 @@ a {
   .jobTitle {
     margin-top: 0;
     font-size: 18px;
+    margin-bottom: 0;
   }
 
   .midRight {
@@ -198,6 +200,24 @@ a {
     justify-content: center;
     margin-top: 10px;
 
+  }
+
+  .bioDescription {
+    /* background-color: rgba(233, 212, 166, 0.608); */
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    box-shadow: inset 0 -3em 3em rgba(254, 200, 5, 0.258),
+    /* 0 0  0 2px rgba(246, 222, 68, 0.646), */
+    0.3em 0.3em 2em rgba(249, 221, 10, 0.35);
+    background-color: rgba(148, 138, 102, 0.895);
+    /* background: linear-gradient(20deg, rgb(68, 1, 37), rgb(20, 1, 25)); */
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    border-top: solid 1px rgb(241, 221, 106);
+    border-bottom: solid 1px rgb(241, 221, 106);
   }
 
 }
@@ -244,6 +264,22 @@ a {
   margin-left: 35px;
 }
 
+.bioDescription {
+  /* background-color: rgba(233, 212, 166, 0.608); */
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  box-shadow: inset 0 -3em 3em rgba(254, 200, 5, 0.258),
+  /* 0 0  0 2px rgba(246, 222, 68, 0.646), */
+  0.3em 0.3em 2em rgba(249, 221, 10, 0.35);
+  background-color: rgba(148, 138, 102, 0.895);
+  /* background: linear-gradient(20deg, rgb(68, 1, 37), rgb(20, 1, 25)); */
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
 }
 
 
@@ -260,22 +296,6 @@ a {
   min-height: 400px;
   margin-bottom: 18px;
 
-}
-
-.bioDescription {
-  /* background-color: rgba(233, 212, 166, 0.608); */
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-bottom: 20px;
-  box-shadow: inset 0 -3em 3em rgba(254, 200, 5, 0.258),
-  /* 0 0  0 2px rgba(246, 222, 68, 0.646), */
-  0.3em 0.3em 2em rgba(249, 221, 10, 0.35);
-  background-color: rgba(148, 138, 102, 0.895);
-  /* background: linear-gradient(20deg, rgb(68, 1, 37), rgb(20, 1, 25)); */
-  flex: 1.5;
-  display: flex;
-  flex-direction: column;
-  margin-top: 50px;
 }
 
 .midSection {
@@ -344,15 +364,13 @@ B {
 /* PROJECT SECTION */
 
 .bottomSection {
-  background:linear-gradient(-30deg, rgb(50, 2, 27), rgb(20, 1, 25));
-  box-shadow: inset 0 -1em 1em rgba(254, 200, 5, 0.1),
+  box-shadow: inset 5em -5em 10em 8em rgba(254, 200, 5, 0.1),
   0 0  0 2px rgba(246, 222, 68, 0.646),
   0.3em 0.3em 1em rgba(249, 221, 10, 0.3);
+  background-color: rgba(255, 255, 255, 0.248);
 }
 
 #projectBlock1 {
-  background-image: url("../images/purple-background-small-size.png");
-  background-size: cover;
 }
 
 .projectPhoto1 {
