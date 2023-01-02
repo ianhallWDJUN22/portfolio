@@ -24,7 +24,7 @@ a {
 .header {
   display: flex;
   flex-direction: row;
-  height: 700px;
+  height: 600px;
   border: inset 3px rgb(0, 0, 0);
 }
 
@@ -67,7 +67,7 @@ h1 {
   margin-top: 0;
   flex:3;
   background-image: url("../images/paint-head.png");
-  background-size:contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -79,11 +79,15 @@ h1 {
 
 
 
-.midSection {
+.center {
   background:radial-gradient(rgb(43, 6, 83), rgb(0, 0, 0));
   height: 400px;
   margin-bottom: 30px;
+  font-family: Calibri, sans-serif;
+  color: white;
+
 }
+
 
 /* BUTTON DRIP ANIMATION */
 
@@ -209,7 +213,7 @@ h1 {
 
 
 .bottomSection {
- 
+ background: rgb(243, 233, 219);
 }
 
 /* PROJECT SECTION */
