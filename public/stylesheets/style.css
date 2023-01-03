@@ -6,15 +6,44 @@ body {
 }
 
 
-a {
-  color: rgb(197, 171, 2);
-  text-decoration:none;
-}
-
-
-
-
 /* HEADER*/
+
+.overflow-hidden {
+  overflow: hidden;
+ }
+ 
+ .drop-in {
+  animation: drop-in 1s ease 200ms backwards;
+  animation-delay: .5s;
+ }
+ 
+ .drop-in-2 {
+  animation-duration: 3s;
+  animation-name: animate-fade;
+  animation-fill-mode: backwards;
+  animation-delay: 1s;
+ }
+ 
+ @keyframes drop-in {
+  from {
+   opacity: 0;
+   transform: translateY(-100px);
+  }
+  to {
+   opacity: 1;
+   transform: translate(0px);
+  }
+ }
+
+ @keyframes animate-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+ 
 
 
 .topSection {
@@ -24,7 +53,7 @@ a {
 .header {
   display: flex;
   flex-direction: row;
-  height: 600px;
+  height: 650px;
   border: inset 3px rgb(0, 0, 0);
 }
 
@@ -33,32 +62,42 @@ a {
 .headerLeft {
   display: flex;
   flex-direction: column;
-  padding-left: 5%;
-  padding-right: 5%;
 	font-family: "Cairo";
-  font-stretch: expanded;
-	color: white;
+	color: black;
 	display: flex;
 	flex-direction: column;
 	letter-spacing: 1px;
-	line-height:2;
- 
+  min-width: 650px;
+  max-width: 650px;
+  margin-right: 2%;
+  margin-left: 3%;
+  
 }
 
 
 
 h1 {
-	background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+	/* background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif); */
+  background-image: url("../images/Screen\ Shot.png");
 	background-size: cover;
-  background-position: right;
-  text-align: center;
-  justify-self: right;
 	color: transparent;
+  text-align: center;
 	-moz-background-clip: text;
 	-webkit-background-clip: text;
 	font-size: 100px;
-  margin-top: 30px;
+  margin-top: 70px;
+  margin-bottom: 20px;
 }
+
+p {
+  text-align: center;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 22px;
+
+}
+
+
 
 
 
@@ -70,7 +109,11 @@ h1 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
+ 
 }
+
+
+
 
 
 
@@ -80,13 +123,90 @@ h1 {
 
 
 .center {
-  background:radial-gradient(rgb(43, 6, 83), rgb(0, 0, 0));
+  /* background:radial-gradient(rgb(43, 6, 83), rgb(0, 0, 0)); */
+  background:radial-gradient(rgb(67, 4, 96), rgb(0, 0, 0));
   height: 400px;
-  margin-bottom: 30px;
   font-family: Calibri, sans-serif;
   color: white;
 
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Asap", sans-serif;
+}
+
+section{
+  min-height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section:nth-child(1){
+  color: #e0ffff;
+  }
+section:nth-child(2){
+  color: #42455a;
+  background: #e0ffff;
+} 
+section:nth-child(3){
+  color: #e0ffff;
+}
+section:nth-child(4){
+  color: #42455a;
+  background: #e0ffff;
+}
+section .container{
+  margin: 100px;
+}
+section h1{
+  font-size: 3rem;
+  margin: 20px;
+}
+section h2{
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+section .text-container{
+   display: flex;
+}
+section .text-container .text-box{
+  margin: 20px;
+  padding: 20px;
+}
+section .text-container .text-box h3{
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 900px){
+  section h1{
+    font-size: 2rem;
+    text-align: center;
+  }
+  section .text-container{
+    flex-direction: column;
+  }
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
 
 
 /* BUTTON DRIP ANIMATION */
@@ -102,10 +222,10 @@ h1 {
 .button {
   color: #fff;
   font-weight: normal;
-  font-size: 23.5px;
+  font-size: 24px;
   background: radial-gradient( rgb(167, 26, 198), #8e0edd );
   border-radius: 0px 0px 50px 50px;
-  padding: 30px 90px;
+  padding: 30px 110px;
   border: none;
   transition: .5s ease;
   box-shadow: 0 15px 60px -5px rgba(0, 0, 0, .5);
@@ -137,7 +257,7 @@ h1 {
   height:0px;
   border-radius:0 0 21px 21px;
   background:linear-gradient( #8e0edd, rgb(216, 67, 164));
-  margin: 0px 148px;
+  margin: 0px 178px;
   transition: height 0.9s ease;
 }
 
@@ -148,7 +268,7 @@ h1 {
   height:0px;
   border-radius:0 0 21px 21px;
   background:linear-gradient( #8e0edd, rgb(235, 105, 135));
-  margin: 0px 130px;
+  margin: 0px 160px;
   transition: height 1.5s ease;
 }
 
@@ -158,7 +278,7 @@ h1 {
   height:0px;
   border-radius:0 0 21px 21px;
   background:linear-gradient( #8e0edd, rgb(228, 83, 156));
-  margin: 0px 55px;
+  margin: 0px 65px;
   transition: height 1.3s ease;
 }
 
@@ -202,7 +322,7 @@ h1 {
   height:0px;
   border-radius:0 0 21px 21px;
   background:linear-gradient( #8e0edd, rgb(228, 83, 211));
-  margin: 0px 140px;
+  margin: 0px 170px;
   transition: height 1.2s ease;
 }
 
@@ -213,7 +333,8 @@ h1 {
 
 
 .bottomSection {
- background: rgb(243, 233, 219);
+ background: white;
+ padding-top: 60px;
 }
 
 /* PROJECT SECTION */
@@ -238,29 +359,58 @@ h1 {
   flex-wrap: wrap;
   padding: 10px;
   padding-bottom: 0px;
-
-
-
 }
 
-.projectBlock {
-  border-top: solid 2px rgba(246, 222, 68, 0.646);
-  border-bottom: solid 2px rgba(246, 222, 68, 0.646);
+
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 50px;
+  
 }
 
-.projectPhoto1 {
+.project-text {
+ display: none;
+ height: 0;
+ transition: height 1s ease;
+}
 
+.projectBlocks {
+  border:2px solid #991ee5;
+  border-bottom: none;
+  border-radius: 2px 2px 0 0;
+  background: rgb(243, 233, 219);
+}
+
+
+.projectPhoto {
+  height: 220px;
+  width: 268px;
+}
+
+
+/* .projectPhoto:hover + .project-text {
+  display: block;
+  font-size: 16px;
+  max-width: 268px;
   height: 180px;
+  padding: 15px;
+  text-align: center;
+  
+  
+  
 }
 
-.projectPhoto2 {
-
+.project-text:hover {
+  display: block;
+  font-size: 16px;
+  max-width: 268px;
   height: 180px;
-}
+  padding: 15px;
+  text-align: center;
+  
 
-.projectPhoto3 {
-  align-self: center;
-  height: 180px;
-  width: 120px;
+ } */
 
-} 
+
