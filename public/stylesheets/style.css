@@ -1,9 +1,68 @@
 @import url('https://fonts.googleapis.com/css?family=Cairo');
 body {
   margin: 0 0;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   background: black;
 }
+
+
+/* NAV */
+
+
+.nav {
+  font-size: 20px;
+  color:#1d072e;
+  padding-left: 95px;
+}
+
+.nav a {
+  float: left;
+  font-size: 18px;
+  color:#1d072e;
+  text-align: center;
+  padding: 18px 18px;
+  text-decoration: none;
+}
+
+#nav-line {
+  font-size: 20px;
+  animation-duration: .8s;
+  animation-name: animate-fade;
+  animation-fill-mode: backwards;
+  animation-delay: 1.5s;
+  
+}
+
+/* .slide-right {
+  animation-duration: .6s;
+  animation-name: animate-fade;
+  animation-fill-mode: backwards;
+  animation-delay: 3s;
+} */
+
+.slide-right {
+  overflow:hidden;
+}
+.slide-right {
+  animation-name: slide-right;
+  animation-delay: 5s slide-right;
+  animation: 1.5s slide-right;
+  
+}
+
+@keyframes slide-right {
+  from {
+    opacity: 0%;
+    margin-left: -100%;
+  }
+
+  to {
+    opacity: 100%;
+    margin-left: 0%;
+  }
+}
+
+
 
 
 /* HEADER*/
@@ -18,10 +77,10 @@ body {
  }
  
  .drop-in-2 {
-  animation-duration: 3s;
+  animation-duration: 2.5s;
   animation-name: animate-fade;
   animation-fill-mode: backwards;
-  animation-delay: 1s;
+  animation-delay: .7s;
  }
  
  @keyframes drop-in {
@@ -50,6 +109,7 @@ body {
  background: rgb(255, 255, 255);
 }
 
+
 .header {
   display: flex;
   flex-direction: row;
@@ -69,7 +129,7 @@ body {
 	letter-spacing: 1px;
   min-width: 650px;
   max-width: 650px;
-  margin-right: 2%;
+  margin-right: 1%;
   margin-left: 3%;
   
 }
@@ -85,8 +145,8 @@ h1 {
 	-moz-background-clip: text;
 	-webkit-background-clip: text;
 	font-size: 100px;
-  margin-top: 70px;
-  margin-bottom: 20px;
+  margin-top: 25px;
+  margin-bottom: 57px;
 }
 
 p {
@@ -109,9 +169,26 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
- 
+  animation-duration: 4s ease;
+  animation-fill-mode: backwards; 
+  animation-name: slide-left;
+  animation:  slide-left 6s;
+  
+  
+  
 }
 
+@keyframes slide-left {
+  from {
+    
+    padding-left: 70%;
+  }
+
+  to {
+   
+    padding-left: 0%;
+  }
+}
 
 
 
@@ -148,17 +225,10 @@ section{
 section:nth-child(1){
   color: #e0ffff;
   }
-section:nth-child(2){
-  color: #42455a;
-  background: #e0ffff;
-} 
 section:nth-child(3){
   color: #e0ffff;
 }
-section:nth-child(4){
-  color: #42455a;
-  background: #e0ffff;
-}
+
 section .container{
   margin: 100px;
 }
@@ -197,7 +267,7 @@ section .text-container .text-box h3{
 
 .reveal{
   position: relative;
-  transform: translateY(150px);
+  transform: translateY(100px);
   opacity: 0;
   transition: 1s all ease;
 }
