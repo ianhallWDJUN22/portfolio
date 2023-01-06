@@ -13,6 +13,17 @@ body {
   font-size: 20px;
   color:#1d072e;
   padding-left: 95px;
+  margin-top: 10px;
+}
+
+#nav-line {
+  text-shadow: 0 0 1px rgb(137, 22, 175);
+  color:rgb(116, 38, 153)
+}
+
+.slide-right:hover {
+  text-shadow: 0 0 1px rgb(159, 31, 201);
+  color:rgb(116, 38, 153)
 }
 
 .nav a {
@@ -33,12 +44,7 @@ body {
   
 }
 
-/* .slide-right {
-  animation-duration: .6s;
-  animation-name: animate-fade;
-  animation-fill-mode: backwards;
-  animation-delay: 3s;
-} */
+
 
 .slide-right {
   overflow:hidden;
@@ -145,7 +151,7 @@ h1 {
 	-moz-background-clip: text;
 	-webkit-background-clip: text;
 	font-size: 100px;
-  margin-top: 25px;
+  margin-top: 35px;
   margin-bottom: 57px;
 }
 
@@ -202,7 +208,7 @@ p {
 .center {
   /* background:radial-gradient(rgb(43, 6, 83), rgb(0, 0, 0)); */
   background:radial-gradient(rgb(67, 4, 96), rgb(0, 0, 0));
-  height: 400px;
+  height: 600px;
   font-family: Calibri, sans-serif;
   color: white;
 
@@ -340,6 +346,7 @@ section .text-container .text-box h3{
   background:linear-gradient( #8e0edd, rgb(235, 105, 135));
   margin: 0px 160px;
   transition: height 1.5s ease;
+  z-index: 1;
 }
 
 .drip-3{
@@ -384,6 +391,7 @@ section .text-container .text-box h3{
   background:linear-gradient( #8e0edd, rgb(235, 122, 105));
   margin: 0px 88px;
   transition: height 1.5s ease;
+  z-index: 1;
 }
 
 .drip-3B {
@@ -398,17 +406,27 @@ section .text-container .text-box h3{
 
 
 
-
-/* MID SECTION */
-
-
-.bottomSection {
- background: white;
- padding-top: 60px;
-}
-
 /* PROJECT SECTION */
 
+
+
+
+
+#projectH1 {
+  font-size: 55px;
+  margin-bottom: 15px;
+  margin-top: 0px;
+  padding-top: 0px;
+  
+  
+}
+
+
+.project-section {
+ background: rgb(250, 250, 250);
+ padding-top: 35px;
+ border: solid 2px black;
+}
 
 
 .projects {
@@ -417,8 +435,8 @@ section .text-container .text-box h3{
   text-align: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding-bottom: 300px;
- 
+  padding-bottom: 25px;
+  min-height: 700px;
 }
 
 
@@ -436,51 +454,98 @@ section .text-container .text-box h3{
 h3 {
   font-size: 20px;
   margin-bottom: 10px;
-  margin-top: 50px;
+  margin-top: 60px;
   
 }
 
-.project-text {
- display: none;
- height: 0;
- transition: height 1s ease;
-}
 
-.projectBlocks {
+
+.projectBlock1 {
   border:2px solid #991ee5;
   border-bottom: none;
-  border-radius: 2px 2px 0 0;
+  border-radius: 4px 4px 0 0;
+  background: rgb(243, 233, 219);
+}
+.projectBlock2 {
+  border:2px solid #991ee5;
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
+  background: rgb(243, 233, 219);
+}
+.projectBlock3 {
+  border:2px solid #991ee5;
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
   background: rgb(243, 233, 219);
 }
 
 
-.projectPhoto {
+.projectPhoto1 {
+  height: 220px;
+  width: 268px;
+}
+
+.projectPhoto2 {
+  height: 220px;
+  width: 268px;
+}
+.projectPhoto3 {
   height: 220px;
   width: 268px;
 }
 
 
-/* .projectPhoto:hover + .project-text {
-  display: block;
-  font-size: 16px;
-  max-width: 268px;
-  height: 180px;
-  padding: 15px;
-  text-align: center;
-  
-  
+#hoverInfo {
+  position: absolute;
+  z-index: 1;
+  color:rgb(39, 2, 56);
+  margin-top: 565px;
+  font-size: 18px;
+}
+
+.info {
+  /* position: absolute; */
+  z-index: 2;
+  color: white;
+  box-shadow: 0 15px 60px -5px rgba(0, 0, 0, .5);
+  padding: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: justify;
+  align-self: center;
+  margin: 15%;
+  margin-top: 40px;
+  /* margin-top: 450px; */
+  margin-bottom: 25px;
+  background: linear-gradient( rgb(149, 48, 196), #761ead );
+  border-radius: 5px;
+  font-family: "Cairo";
+  line-height: 1.3em;
+  transition: display .5s ease
+}
+
+#info1 {
+  display: none;
   
 }
 
-.project-text:hover {
-  display: block;
-  font-size: 16px;
-  max-width: 268px;
-  height: 180px;
-  padding: 15px;
-  text-align: center;
-  
+#info2 {
+  display: none;
 
- } */
+}
+
+#info3 {
+  display: none;
+
+}
 
 
+
+
+/* CONTACT */
+
+
+#contact {
+  background:radial-gradient(rgb(0, 0, 0), rgb(39, 2, 56));
+  height: 500px;
+}
