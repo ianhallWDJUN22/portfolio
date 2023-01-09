@@ -136,8 +136,8 @@ body {
 	letter-spacing: 1px;
   min-width: 650px;
   max-width: 650px;
-  margin-right: 1%;
-  margin-left: 3%;
+  margin-right: 2%;
+  margin-left: 2%;
   
 }
 
@@ -508,7 +508,7 @@ h3 {
   /* position: absolute; */
   z-index: 2;
   color: rgb(39, 38, 38);
-  box-shadow: 0 15px 60px -5px rgba(0, 0, 0, .5);
+  box-shadow: 0 10px 40px -3px rgba(0, 0, 0, .5);
   padding: 25px;
   padding-top: 15px;
   padding-bottom: 15px;

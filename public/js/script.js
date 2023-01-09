@@ -26,8 +26,11 @@ function reveal() {
 }
 window.addEventListener("scroll", reveal);
 
+
+
 // Below are the functions to display the info of an individual project when that project is hovered over.
 // A CSS relational hover: tag would not work in this case as the divs were not connected
+
 
 document.getElementById("project1").onmouseover = function () {
   mouseOver();
@@ -44,6 +47,9 @@ function mouseOut() {
   document.getElementById("info1").style.display = "none";
 }
 
+
+
+
 document.getElementById("project2").onmouseover = function () {
   mouseOver2();
 };
@@ -58,6 +64,9 @@ function mouseOver2() {
 function mouseOut2() {
   document.getElementById("info2").style.display = "none";
 }
+
+
+
 
 document.getElementById("project3").onmouseover = function () {
   mouseOver3();
