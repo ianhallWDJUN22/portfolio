@@ -83,6 +83,7 @@ body {
  }
  
  .drop-in-2 {
+  color: rgb(39, 2, 56);
   animation-duration: 2.5s;
   animation-name: animate-fade;
   animation-fill-mode: backwards;
@@ -424,7 +425,7 @@ section .text-container .text-box h3{
 
 .project-section {
  background: rgb(250, 250, 250);
- padding-top: 35px;
+ padding-top: 30px;
  border: solid 2px black;
 }
 
@@ -436,7 +437,7 @@ section .text-container .text-box h3{
   justify-content: space-around;
   flex-wrap: wrap;
   padding-bottom: 25px;
-  min-height: 700px;
+  min-height: 715px;
 }
 
 
@@ -499,14 +500,14 @@ h3 {
   position: absolute;
   z-index: 1;
   color:rgb(39, 2, 56);
-  margin-top: 565px;
+  margin-top: 525px;
   font-size: 18px;
 }
 
 .info {
   /* position: absolute; */
   z-index: 2;
-  color: white;
+  color: rgb(39, 38, 38);
   box-shadow: 0 15px 60px -5px rgba(0, 0, 0, .5);
   padding: 25px;
   padding-top: 15px;
@@ -517,7 +518,7 @@ h3 {
   margin-top: 40px;
   /* margin-top: 450px; */
   margin-bottom: 25px;
-  background: linear-gradient( rgb(149, 48, 196), #761ead );
+  background: white;
   border-radius: 5px;
   font-family: "Cairo";
   line-height: 1.3em;
