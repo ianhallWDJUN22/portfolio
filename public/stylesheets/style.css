@@ -274,7 +274,7 @@ section .text-container .text-box h3{
 
 .reveal{
   position: relative;
-  transform: translateY(100px);
+  transform: translateY(60px);
   opacity: 0;
   transition: 1s all ease;
 }
@@ -315,15 +315,15 @@ section .text-container .text-box h3{
   background: radial-gradient( #8e0edd, #8e0edd );
 }
 
-.button:hover + .drip-1{
+form:hover + .drip-1{
   height: 50px;
 }
 
-.button:hover ~ .drip-2{
+form:hover ~ .drip-2{
   height: 90px;
 }
 
-.button:hover ~ .drip-3{
+form:hover ~ .drip-3{
   height: 24px;
 }
 
@@ -361,15 +361,15 @@ section .text-container .text-box h3{
 }
 
 
-.button:hover + .drip-1B{
+form:hover + .drip-1B{
   height: 50px;
 }
 
-.button:hover ~ .drip-2B{
+form:hover ~ .drip-2B{
   height: 90px;
 }
 
-.button:hover ~ .drip-3B{
+form:hover ~ .drip-3B{
   height: 32px;
 }
 
@@ -389,7 +389,7 @@ section .text-container .text-box h3{
   width:19px;
   height:0px;
   border-radius:0 0 21px 21px;
-  background:linear-gradient( #8e0edd, rgb(235, 122, 105));
+  background:linear-gradient( #8e0edd, rgb(235, 105, 135));
   margin: 0px 88px;
   transition: height 1.5s ease;
   z-index: 1;
@@ -437,7 +437,7 @@ section .text-container .text-box h3{
   justify-content: space-around;
   flex-wrap: wrap;
   padding-bottom: 25px;
-  min-height: 715px;
+  min-height: 700px;
 }
 
 
@@ -455,7 +455,7 @@ section .text-container .text-box h3{
 h3 {
   font-size: 20px;
   margin-bottom: 10px;
-  margin-top: 60px;
+  margin-top: 45px;
   
 }
 
@@ -547,6 +547,6 @@ h3 {
 
 
 #contact {
-  background:radial-gradient(rgb(0, 0, 0), rgb(39, 2, 56));
-  height: 500px;
+  background:linear-gradient(rgb(0, 0, 0),rgb(67, 4, 96));
+  height: 200px;
 }

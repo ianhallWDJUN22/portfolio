@@ -1,6 +1,3 @@
-
-
-
 document.addEventListener(
   "DOMContentLoaded",
   () => {
@@ -9,6 +6,8 @@ document.addEventListener(
   false
 );
 
+//This function makes the text in the "About" section slide
+//up into view apon scrolling down and disapear when scrolling back up
 
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
@@ -25,5 +24,52 @@ function reveal() {
     }
   }
 }
-
 window.addEventListener("scroll", reveal);
+
+// Below are the functions to display the info of an individual project when that project is hovered over.
+// A CSS relational hover: tag would not work in this case as the divs were not connected
+
+document.getElementById("project1").onmouseover = function () {
+  mouseOver();
+};
+document.getElementById("project1").onmouseout = function () {
+  mouseOut();
+};
+
+function mouseOver() {
+  document.getElementById("info1").style.display = "block";
+}
+
+function mouseOut() {
+  document.getElementById("info1").style.display = "none";
+}
+
+document.getElementById("project2").onmouseover = function () {
+  mouseOver2();
+};
+document.getElementById("project2").onmouseout = function () {
+  mouseOut2();
+};
+
+function mouseOver2() {
+  document.getElementById("info2").style.display = "block";
+}
+
+function mouseOut2() {
+  document.getElementById("info2").style.display = "none";
+}
+
+document.getElementById("project3").onmouseover = function () {
+  mouseOver3();
+};
+document.getElementById("project3").onmouseout = function () {
+  mouseOut3();
+};
+
+function mouseOver3() {
+  document.getElementById("info3").style.display = "block";
+}
+
+function mouseOut3() {
+  document.getElementById("info3").style.display = "none";
+}
