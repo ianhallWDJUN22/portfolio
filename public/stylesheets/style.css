@@ -516,7 +516,6 @@ h3 {
   align-self: center;
   margin: 15%;
   margin-top: 40px;
-  /* margin-top: 450px; */
   margin-bottom: 25px;
   background: white;
   border-radius: 5px;
@@ -548,5 +547,5 @@ h3 {
 
 #contact {
   background:linear-gradient(rgb(0, 0, 0),rgb(67, 4, 96));
-  height: 200px;
+  height: 175px;
 }
