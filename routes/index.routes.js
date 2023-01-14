@@ -4,7 +4,9 @@ router.get("/", (req, res, next) => {
   res.render("index");
 });
 
+
 module.exports = router;
+
 
 // router.get('/project1', (req, res, next) => {
 //   res.render('projects/project1.hbs');
