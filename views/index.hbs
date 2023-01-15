@@ -50,41 +50,7 @@
         </div>
     </section>
 
-    <div id="contact">
-        <h2>Contact Me!</h2>
-        <form 
-        action="https://formsubmit.co/ianmhall6@gmail.com" method="POST">
-        
-        <input type="text" name="_honey" style="display: none;">
 
-        <input type="hidden" name="_captcha" value="false">
-
-
-        <div>
-            <label for="firstName" class="form-label">FIRST NAME</label>
-            <input type="text" class="form-input" name="name" id="firstName" required>
-        </div>
-        <div>
-            <label for="lastName" class="form-label">LAST NAME</label>
-            <input type="text" class="form-input" name="lastName" id="lastName" required>
-        </div>
-            <label for="emailInfo" class="form-label">E-mail</label>
-            <input type="email" class="form-input" name="email" id="emailInfo" required>
-        <div>
-        <div>
-            <label for="phoneNumber" class="form-label">Phone Number</label>
-            <input type="text" class="form-input" name="phone" id="phoneNumber">
-        </div>
-        <div>
-            <label for="message" class="form-label">Leave your message here!</label>
-            <textarea class="form-input" id="message" name="message"></textarea>
-        </div>
-        <div>
-            <button type="submit" class="btn-submit">SUBMIT</button>
-        </div>
-        </form>
-
-    </div>
 </div>
 
 
@@ -92,9 +58,9 @@
 
     <h1  id="projectH1">FEATURED PROJECTS</h1>
 
-    <div class="projects reveal">
+    <div class="projects">
 
-        <div class="lowerProjectBlock">
+        <div class="lowerProjectBlock reveal">
             <div class="imgDiv">
                 <h3 class="projectTitle">Defusal</h3>
                 <div class="projectBlock1">
@@ -114,7 +80,7 @@
             </div>
         </div>
 
-        <div class="lowerProjectBlock">
+        <div class="lowerProjectBlock reveal">
             <div class="imgDiv">
                 <h3 class="projectTitle">Dungeon Forge</h3>
                 <div class="projectBlock2">
@@ -135,7 +101,7 @@
             </div>
         </div>
 
-        <div class="lowerProjectBlock">
+        <div class="lowerProjectBlock reveal">
 
             <div class="imgDiv">
                 <h3 class="projectTitle">baseNote</h3>
@@ -185,7 +151,95 @@
     </div>
 </div>  
     
-    <div footer>
+
+<div id="bottom" >
+
+    <div class="reveal" id="contact">
+        <h2>Want to get in touch? Leave a message!</h2>
+        <form 
+            action="https://formsubmit.co/ianmhall6@gmail.com" method="POST">
+            
+        <input type="text" name="_honey" style="display: none;">
+
+        <input type="hidden" name="_captcha" value="false">
+
+    <div id="contact-mid">
+        <div  id="contact-left">
+            <div>
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" class="form-input" name="name" id="firstName" required>
+            </div>
+            <div>
+                <label for="lastName" class="form-label">Last Name</label>
+                <input type="text" class="form-input" name="lastName" id="lastName" required>
+            </div>
+                <label for="emailInfo" class="form-label">E-mail</label>
+                <input type="email" class="form-input" name="email" id="emailInfo" required>
+            
+            <div>
+                <label for="phoneNumber" class="form-label">Phone Number</label>
+                <input type="text" class="form-input" name="phone" id="phoneNumber">
+            </div>
+        </div>
+
+        <div id="contact-right">
+            <div>
+            <div>
+                <label for="message" class="message-label">Leave your message here!</label>
+            </div>
+                <textarea class="form-message" id="message" name="message"></textarea>
+            </div>
+            <div>
+                <button type="submit" class="btn-submit">SUBMIT</button>
+            </div>
+
+        </div>
+
+    </div>
+        </form>
+    </div>
+
+
+    <div id="bottom-1">
+        <div class="fotter-links">
+            <div id="github-icon">
+                <a href="https://github.com/ianhallWDJUN22" target="_blank" rel="noopener noreferrer">
+                    <img class="footer-icon" src="./images/github.png">
+                </a>
+            </div>
+
+                <div id="github-tag">
+                    <p class="bottom-tag">GitHub</p>
+                </div>
+        </div>
+
+        <div class="footer-links">
+            <div id="linkedin-icon">
+                <a href="https://www.linkedin.com/in/ian-hall77" target="_blank" rel="noopener noreferrer">
+                        <img class="footer-icon" src="./images/linkedin.png">
+                </a>    
+            </div>
+
+            <div id="linkedin-tag">
+                <p class="bottom-tag">LinkedIn</p>
+            </div>
+
+        </div>
+
+        <div class="footer-links">
+            <div id="resume-icon">
+                <a href="https://www.canva.com/design/DAFHGFgqDz0/kwSDxCXZt122wYPAa-7Paw/view?utm_content=DAFHGFgqDz0&utm_campaign=designshare&utm_medium=link&utm_source=viewer"
+                target="_blank" rel="noopener noreferrer">
+                    <img class="footer-icon" src="./images/resume.png">
+                </a>
+            </div>
+
+            <div id="resume-tag">
+                <p class="bottom-tag">Resumé</p>
+            </div>
+
+        </div>
 
     </div>
 
+    </div>
