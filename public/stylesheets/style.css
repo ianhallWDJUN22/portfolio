@@ -22,8 +22,8 @@ body {
 }
 
 .slide-right:hover {
-  text-shadow: 0 0 1px rgb(159, 31, 201);
-  color:rgb(116, 38, 153)
+  text-shadow: 0 0 1px rgba(85, 56, 214, 0.83);
+  color:rgb(133, 59, 195)
 }
 
 .nav a {
@@ -120,8 +120,9 @@ body {
 .header {
   display: flex;
   flex-direction: row;
-  height: 650px;
+  height: 670px;
   border: inset 3px rgb(0, 0, 0);
+  
 }
 
 
@@ -145,8 +146,9 @@ body {
 
 h1 {
 	/* background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif); */
-  background-image: url("../images/Screen\ Shot.png");
+  background-image: url("../images/Screen Shot1.png");
 	background-size: cover;
+  background-position: bottom;
 	color: transparent;
   text-align: center;
 	-moz-background-clip: text;
@@ -207,11 +209,12 @@ p {
 
 
 .center {
-  /* background:radial-gradient(rgb(43, 6, 83), rgb(0, 0, 0)); */
-  background:radial-gradient(rgb(67, 4, 96), rgb(0, 0, 0));
-  height: 600px;
+  background: rgb(152,54,233);
+  background: radial-gradient( rgba(120, 54, 233, 0.51) 0%, rgb(28, 2, 52) 60%, rgb(4, 0, 7) 100%);
+  height: 400px;
   font-family: Calibri, sans-serif;
   color: white;
+
 
 }
 
@@ -236,31 +239,7 @@ section:nth-child(3){
   color: #e0ffff;
 }
 
-section .container{
-  margin: 100px;
-}
-section h1{
-  font-size: 3rem;
-  margin: 20px;
-}
-section h2{
-  font-size: 40px;
-  text-align: center;
-  text-transform: uppercase;
-}
-section .text-container{
-   display: flex;
-}
-section .text-container .text-box{
-  margin: 20px;
-  padding: 20px;
-}
-section .text-container .text-box h3{
-  font-size: 30px;
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
+
 
 @media (max-width: 900px){
   section h1{
@@ -301,10 +280,10 @@ section .text-container .text-box h3{
   font-size: 24px;
   background: radial-gradient( rgb(167, 26, 198), #8e0edd );
   border-radius: 0px 0px 50px 50px;
-  padding: 30px 110px;
+  padding: 30px 112px;
   border: none;
   transition: .5s ease;
-  box-shadow: 0 15px 60px -5px rgba(0, 0, 0, .5);
+  box-shadow: 0 10px 40px -6px rgba(75, 12, 98, 0.636);
   transition: box-shadow 0.9s ease;
 }
 
@@ -417,15 +396,17 @@ form:hover ~ .drip-3B{
   margin-bottom: 15px;
   margin-top: 0px;
   padding-top: 0px;
+  background-position: bottom;
   
   
 }
 
 
 .project-section {
-  background: rgb(250, 250, 250);
+  background: white;
   padding-top: 30px;
   border: solid 2px black;
+  border-radius: 30px 30px 0px 0px; 
 }
 
 
@@ -435,8 +416,12 @@ form:hover ~ .drip-3B{
   text-align: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding-bottom: 25px;
   min-height: 700px;
+  background-image: url("../images/paint-blot2.png");
+  background-size: fit ;
+  background-repeat: no-repeat ;
+  background-position: right;
+  background-position-y: bottom;
 }
 
 
@@ -455,7 +440,8 @@ h3 {
   font-size: 20px;
   margin-bottom: 10px;
   margin-top: 45px;
-  color: black;
+  color: rgb(59, 21, 68);
+  text-shadow: 1px 1px 1px rgba(230, 223, 223, 0.626);
   
 }
 
@@ -499,24 +485,24 @@ h3 {
 #hoverInfo {
   position: absolute;
   z-index: 1;
-  color:rgb(39, 2, 56);
-  margin-top: 525px;
+  color:rgba(39, 2, 56, 0.588);
+  margin-top: 545px;
   font-size: 18px;
 }
 
 .info {
-  /* position: absolute; */
+  position: absolute;
   z-index: 2;
-  color: rgb(39, 38, 38);
-  box-shadow: 0 10px 40px -3px rgba(0, 0, 0, .5);
+  color: rgb(60, 33, 73);
+  box-shadow: 0 10px 40px -6px rgba(75, 12, 98, 0.5);
   padding: 25px;
   padding-top: 15px;
   padding-bottom: 15px;
   text-align: justify;
   align-self: center;
   margin: 15%;
-  margin-top: 40px;
-  margin-bottom: 25px;
+  margin-top: 415px;
+  margin-bottom: 0px;
   background: white;
   border-radius: 5px;
   font-family: "Cairo";
@@ -561,7 +547,7 @@ h3 {
 /* FOOTER */
 
 #bottom {
-  background: linear-gradient(rgb(23, 2, 38),rgb(55, 5, 78));
+  background: linear-gradient(rgb(13, 1, 22) 15%,rgb(54, 11, 100) );
   min-height: 500px;
   padding-top: 60px;
   padding-bottom: 50px;
@@ -589,9 +575,9 @@ a:hover {
 
 
 .bottom-tag {
-  font-size: 10px;
+  font-size: 12px;
   text-align: center;
-  color: white;
+  color: rgba(199, 222, 253, 0.913);
   margin-top: 5px;
 }
 
@@ -626,17 +612,17 @@ a:hover {
 }
 
 #contact {
-  padding: 35px;
-  padding-bottom: 30px;
-  padding-top: 30px;
-  margin-top: 20px;
+  padding: 40px;
+  margin-top: 70px;
+  border: .5px solid rgba(216, 242, 248, 0.655);
   border-radius: 10px;
-  background: rgb(110,63,251);
-  background: radial-gradient(circle, rgba(110,63,251,1) 25%, rgba(115,26,193,1) 100%);
+  background: rgb(92,63,251);
+  background: radial-gradient( rgba(92,63,251,1) 20%, rgba(134, 29, 214, 0.813) 100%);
   color: whtie;
+  margin-bottom: 100px;
   margin-left: 20%;
   margin-right: 20%;
-  box-shadow: 0 10px 40px -3px rgba(220, 11, 206, 0.5);
+  box-shadow: 0 10px 40px -3px rgba(55, 101, 230, 0.5);
 }
 
 #contact-mid {
@@ -665,29 +651,42 @@ a:hover {
   text-align: center;
   margin-bottom: 16px;
   padding: 2px;
- 
+  border:1px solid rgba(87, 0, 128, 0.745);
+  border-radius: 2px;
 }
 
 
 
 .form-message {
-  width: 280px;
-  height: 170px;
-  margin-top: 10px;
+  width: 320px;
+  height: 188.5px;
   padding: 8px;
   font-size: 15px;
+  border:1px solid rgba(87, 0, 128, 0.745);
+  border-radius: 2px;
 
 }
 
 .btn-submit {
-  margin-top: 15px;
+  margin-top: 20px;
+  width: 100px;
+  font-size: 13px;
+  padding: 4px;
+  background: radial-gradient(  #faf9fa 50%, rgb(187, 182, 189));
+  box-shadow: 0 10px 40px -3px rgba(0, 0, 0, .5);
+  border: .5px solid rgba(216, 242, 248, 0.968);
+  border-radius: 3px;
+  color: rgb(141, 32, 230);
+  cursor: pointer;
+  letter-spacing: 1px;
+
 }
 
 
 h2 {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .footer-icon {
-  width: 52px;
+  width: 54px;
 }
