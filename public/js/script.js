@@ -32,8 +32,15 @@ window.addEventListener("scroll", reveal);
 // A CSS relational hover: tag would not work in this case as the divs were not connected
 
 
+const mediaQuery = window.matchMedia('(min-width: 1061px)')
+
+
+
 document.getElementById("project1").onmouseover = function () {
+  
+  if (mediaQuery.matches) {
   mouseOver();
+  }
 };
 document.getElementById("project1").onmouseout = function () {
   mouseOut();
@@ -51,7 +58,9 @@ function mouseOut() {
 
 
 document.getElementById("project2").onmouseover = function () {
+  if (mediaQuery.matches) {
   mouseOver2();
+  }
 };
 document.getElementById("project2").onmouseout = function () {
   mouseOut2();
@@ -69,7 +78,9 @@ function mouseOut2() {
 
 
 document.getElementById("project3").onmouseover = function () {
+  if (mediaQuery.matches) {
   mouseOver3();
+  }
 };
 document.getElementById("project3").onmouseout = function () {
   mouseOut3();
