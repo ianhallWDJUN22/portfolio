@@ -21,7 +21,7 @@ require("./config")(app);
 const capitalized = require("./utils/capitalized");
 const projectName = "portfolio";
 
-app.locals.appTitle = `Ian M Hall ~ Web Dev Portfolio`;
+app.locals.appTitle = `Ian M Hall`;
 
 // 👇 Start handling routes here
 const index = require("./routes/index.routes");
