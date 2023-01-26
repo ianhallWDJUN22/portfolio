@@ -331,7 +331,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-items: center;
-  line-height: 1.9em;
+  line-height: 1.8em;
 }
 
 .underline {
@@ -363,15 +363,15 @@ body {
 }
 
 .text-box {
-  margin-right: 5%;
-  margin-left: 5%; 
-  font-size: 11px;
+  margin-right: 4%;
+  margin-left: 4%; 
   color: white;
 }
 
 
 .mid-text{
   margin-top: 15px;
+  font-size: 18px;
 }
 
 
