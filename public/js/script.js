@@ -32,7 +32,7 @@ window.addEventListener("scroll", reveal);
 // A CSS relational hover: tag would not work in this case as the divs were not connected
 
 
-const mediaQuery = window.matchMedia('(min-width: 1061px)')
+const mediaQuery = window.matchMedia('(min-width: 1062px)')
 
 
 
